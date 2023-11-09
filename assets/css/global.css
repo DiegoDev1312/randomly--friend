@@ -24,12 +24,16 @@ main {
 
 fieldset {
     display: flex;
-    width: 90%;
+    width: 70%;
     padding: 18px;
     flex-direction: column;
     border: 1px solid #999;
     align-items: center;
     border-radius: 14px;
+}
+
+fieldset h1 {
+    font-size: 1.5rem;
 }
 
 legend {
@@ -114,6 +118,9 @@ fieldset .add-button:hover {
         flex-wrap: wrap;
         gap: 20px;
         justify-content: center;
+    }
+    fieldset {
+        width: 90%;
     }
     .button-area  {
         flex-wrap: wrap;
