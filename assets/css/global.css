@@ -1,0 +1,121 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    max-width: 100vw;
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+fieldset {
+    display: flex;
+    width: 90%;
+    padding: 18px;
+    flex-direction: column;
+    border: 1px solid #999;
+    align-items: center;
+    border-radius: 14px;
+}
+
+legend {
+    text-align: center;
+    font-size: 1.6rem;
+    padding: 16px;
+}
+
+fieldset .form-area {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+fieldset img {
+    height: 200px;
+    width: 200px;
+}
+
+.pairs-area {
+    display: none;
+    margin-top: 14px;
+}
+
+.button-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+fieldset .add-button, fieldset .reload-button {
+    height: 35px;
+    width: 170px;
+    background-color: transparent;
+    border: 1px solid #999;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: 0.5s;
+}
+
+fieldset .reload-button {
+    display: none;
+}
+
+fieldset .raffle-button {
+    height: 35px;
+    width: 100px;
+    border-radius: 6px;
+    color: #FFF;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1.1rem;
+    border: none;
+    transition: 0.5s;
+    background-color: #6C63FF;
+    border :none;
+}
+
+fieldset .add-button:hover {
+    background-color: #CCC;
+}
+
+.form-area input {
+    height: 35px;
+    width: 200px;
+    padding-left: 12px;
+    outline: none;
+    border: 1px solid #999;
+    border-radius: 6px;
+}
+
+@media (max-width: 500px) {
+    legend {
+        font-size: 1.4rem;
+    }
+    fieldset .form-area {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+    .button-area  {
+        flex-wrap: wrap;
+    }
+}
