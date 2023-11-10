@@ -79,5 +79,12 @@ function handleAddPress() {
     inputs = document.querySelectorAll('input');
 }
 
+function handleKeyPress(e) {
+    if (e.key === 'Enter') {
+        handleAddPress();
+    }
+}
+
 buttonAdd.addEventListener('click', handleAddPress);
 reloadButton.addEventListener('click', handleReload);
+window.addEventListener('keydown', handleKeyPress);
